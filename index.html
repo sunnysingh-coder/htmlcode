@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animation ka bharpur gyan</title>
+  <style>
+    .container{
+      background-color: aqua;
+      margin:2px;
+      padding: 2px;
+      border: 2px solid red;
+      height:700px;
+      width:700px;
+      
+     
+    }
+    .tr{
+      font-size:60px;
+     position: relative;
+     animation-name:move;
+     animation-duration:5s;
+     animation-iteration-count: 5;
+     animation-delay:2s;
+     animation-timing-function:cubic-bezier(1,-0.4, 1, 1);
+
+    }
+    @keyframes move{
+      from{
+        top:0;
+        left:0;
+      }
+      to{
+        top:300px;
+        left:300px;
+       
+        
+        
+      }
+    }
+    .trr{
+      font-size:60px;
+
+    }
+    .gon{
+      font-size: 60px;
+      text-align:end;
+      position: relative;
+      top:530px;
+      animation-name:rom;
+      animation-duration:5s;
+      animation-iteration-count:5;
+      animation-delay:2s ;
+      animation-timing-function:ease;
+      }
+      @keyframes rom{
+        0%{
+          bottom:0%;
+          right:90%;
+        }
+        30%{
+          
+          top:20%;
+          right:5%;
+
+        }
+        60%{
+          top:1%;
+          right:40%;
+        }
+        80%{
+          top:35%;
+          right:80%;
+        }
+        100%{
+          top:35%;
+          right:45%;
+        }
+      }
+    #re{
+      text-align: center;
+      position: relative;
+      top:150px;
+    }
+
+  </style>
+ </head>
+ <body>
+  <div class="container">
+    <div class="tr">&#x1F924; </div>
+    <div class="gon">&#x1F618; </div>
+    <div class="trr" id="re">&#x1F37C;</div>
+  </div>
+ </body>
+ </html>
